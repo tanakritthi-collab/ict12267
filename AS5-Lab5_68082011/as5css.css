@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(pic/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 20px 8%; 
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    width: 750px; 
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px; 
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 30px; 
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #333;
+    margin-right: 25px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 18px 45px;
+    color: #fff;
+    background-image: linear-gradient(45deg,#0781d3,#2600ff);
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 60px;
+    border-top-right-radius: 0;
+    transition: 0.5s;
+}
+
+.content h1 {
+    font-size: 180px; 
+    color: #00d9ff; 
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.content {
+    margin-top: 8%;
+    max-width: 800px;
+    padding: 40px;
+}
+
+.content p {
+    margin: 25px 0 45px;
+    color: #f0f0f0; 
+    font-size: 24px; 
+    line-height: 1.6;
+}
+
+.content .btn {
+    padding: 20px 90px;
+    font-size: 22px;
+}
+
+.btn:hover {
+    border-top-right-radius: 40px;
+}
+
+.Features-img {
+    width: 1200px; 
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+}
+
+.anim {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: moveup 0.8s ease-out forwards;
+}
+
+.content h1.anim { animation-delay: 0.2s; }
+.content p.anim { animation-delay: 0.5s; }
+.content .btn.anim { animation-delay: 0.8s; }
+.Features-img.anim { animation-delay: 1.2s; }
+
+@keyframes moveup {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
